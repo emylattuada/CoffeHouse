@@ -1815,4 +1815,35 @@
 
 #menu-desserts {
     scroll-margin-top: 210px;
+
 }
+
+/* -----------------------------
+   Responsive: About Section
+------------------------------ */
+@media (max-width: 900px) {
+
+  .about-section {
+    padding: 80px 20px 60px;
+    min-height: auto; /* evita overflow innecesario */
+  }
+
+  .about-content {
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    gap: 40px;
+  }
+
+  .about-video {
+    border: 5px solid var(--peach);
+    box-sizing: border-box; /* evita que el borde aumente el ancho */
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
